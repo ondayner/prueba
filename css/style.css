@@ -73,26 +73,6 @@ html, body {
   letter-spacing: 1px;
 }
 
-.theme-toggle-btn {
-  padding: 6px 12px;
-  background-color: var(--input-bg);
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 0.85rem;
-  user-select: none;
-  transition: opacity 0.2s;
-}
-
-.theme-toggle-btn:hover {
-  opacity: 0.8;
-}
-
-.icon-sun { display: inline; }
-.icon-moon { display: none; }
-
-#theme-toggle:checked ~ .app-container .icon-sun { display: none; }
-#theme-toggle:checked ~ .app-container .icon-moon { display: inline; }
-
 .input-section {
   display: flex;
   flex-direction: column;
@@ -258,10 +238,10 @@ html, body {
 .badge-completed { background-color: var(--badge-completed-bg); }
 .badge-incomplete { background-color: var(--badge-incomplete-bg); }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .app-container {
-    height: 100vh;
-    max-height: 100vh;
+    height: 90vh;
+    max-height: 90vh;
     border-radius: 0;
     padding: 16px;
   }
